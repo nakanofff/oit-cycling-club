@@ -5,15 +5,25 @@
 <meta name="viewport" content="width=device-width">
 <title>大阪工業大学サイクリング部 oit cycling club</title>
 <link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="animate.css">
 <link rel="stylesheet" href="https://use.typekit.net/zxp8uif.css">
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Noto+Sans+JP:wght@100&family=Open+Sans:ital,wght@1,800&family=Roboto:wght@100&display=swap" rel="stylesheet">
 <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script src="jquery.lettering.js"></script>
+<script src="jquery.textillate.js"></script>
+<script src="first-view.js"></script>
 <script type="text/javascript" src="slick.min.js"></script>
 <link rel="stylesheet" type="text/css" href="slick.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="slick-theme.css" media="screen" />
 	
 	
 	<script type="text/javascript">
+        setTimeout(function(){
+        $('.first-view').fadeOut(500,'swing');
+		
+    },3000);
+  
+		
 $(function() {
 	$('.slick-box').slick({
     autoplay:true,
@@ -27,7 +37,9 @@ $(function() {
 </head>
 
 <body>	
-	
+	<div class="first-view">
+	<p class="first-text">OIT CYCLING CLUB</p>
+	</div>
 	<div id="square">
 	</div>
 <section class="main">
